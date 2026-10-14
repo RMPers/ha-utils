@@ -1,0 +1,7 @@
+# Local overrides — never commit a real host config
+ha-utils.conf
+
+# Editor/OS cruft
+*.swp
+*~
+.DS_Store

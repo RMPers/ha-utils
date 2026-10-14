@@ -1,0 +1,10 @@
+# ha-utils example config. Copy to /etc/ha-utils.conf and edit as needed.
+# All values are optional; unset ones fall back to lib/common.sh defaults.
+
+#CT_NAME=homeassistant
+#CONFIG_DIR=/srv/homeassistant/config
+#BACKUP_ROOT=/srv/homeassistant/backups-host
+#OCI_REMOTE=ghcr
+#OCI_IMAGE=home-assistant/home-assistant
+#REGISTRY_HOST=ghcr.io
+#HEALTH_TIMEOUT=180
