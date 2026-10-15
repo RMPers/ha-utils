@@ -52,7 +52,7 @@ container_exists() {
 # Echo the host path currently bound to the container's /config device, if any.
 container_config_source() {
   incus config device show "$CT_NAME" 2>/dev/null \
-    | awk '/^  config:/{f=1} f&&/source:/{print $2; exit}'
+    | awk '/^[a-zA-Z0-9_-]+:$/{dev=$1} dev=="config:" && /^[[:space:]]+source:/{print $2; exit}'
 }
 
 # Echo the image tag the container was created from (best effort).
