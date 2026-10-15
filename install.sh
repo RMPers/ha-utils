@@ -12,7 +12,7 @@
 #   --prefix DIR  Install symlinks into DIR (default: /usr/local/bin).
 
 set -euo pipefail
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")" && pwd)"
 
 PREFIX="/usr/local/bin"
 WITH_CRON=0
